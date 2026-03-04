@@ -1,10 +1,10 @@
 import React from "react";
 import { Form, InputGroup } from "react-bootstrap";
 
-function SearchBar({ searchTerm, onSearchChange }) {
+export default function SearchBar({ searchTerm, onSearchChange }) {
   return (
-    // TODO 1.2: Set wrapper div className EXACTLY to "mb-4"
-    <div className="">
+    // TODO 1.2: wrapper className must be EXACT
+    <div className="mb-4">
       <InputGroup>
         <InputGroup.Text>Search</InputGroup.Text>
         <Form.Control
@@ -17,5 +17,3 @@ function SearchBar({ searchTerm, onSearchChange }) {
     </div>
   );
 }
-
-export default SearchBar;
